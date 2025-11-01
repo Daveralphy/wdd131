@@ -38,6 +38,10 @@ header {
 }
 
 .name-highlight {
+    color: #007a7a;
+}
+
+header .name-highlight {
     color: var(--color-accent-high-vis);
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
 }
