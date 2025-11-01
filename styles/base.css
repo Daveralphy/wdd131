@@ -1,0 +1,248 @@
+:root {
+    --color-primary: #520052;
+    --color-secondary: #ff00ff;
+    --color-accent-high-vis: #00ffff;
+    --color-text-light: #ffffff;
+    --color-text-dark: #333333;
+    --color-card-bg: #f9f9f9;
+    --font-display: 'Monoton', cursive;
+    --font-body: 'Roboto', sans-serif;
+    --max-width: 1000px;
+    --color-nav-dark: #280028;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    color: var(--color-text-dark);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-bottom: 1.5rem;
+    color: var(--color-text-light);
+    letter-spacing: 2px;
+}
+
+.name-highlight {
+    color: var(--color-accent-high-vis);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+nav {
+    background-color: var(--color-nav-dark);
+    padding: 0.75rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: 400;
+    padding: 0.5rem 0.5rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(255, 0, 255, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin: 2rem auto 1rem;
+    font-size: 2.5rem;
+    max-width: var(--max-width);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--color-text-dark);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    background-color: var(--color-nav-dark);
+    color: var(--color-text-light);
+    text-align: center;
+    margin: 0;
+    padding: 15px 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 2px solid var(--color-secondary);
+    margin-bottom: 15px;
+}
+
+.about-me-card .card-content-wrapper {
+    padding: 0 20px;
+}
+
+.resources-card ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.bio-text h3 {
+    text-align: center;
+    color: var(--color-primary);
+    margin: 0 0 1rem 0;
+    position: relative;
+    padding-bottom: 15px; /* Added space for the pseudo-element line */
+}
+
+.bio-text h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    /* Create the fading line effect using a linear gradient */
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        var(--color-primary) 20%,
+        var(--color-primary) 80%,
+        transparent 100%
+    );
+}
+
+.about-me-card .card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .about-me-card .card-content-wrapper {
+        flex-direction: row;
+    }
+    .bio-text {
+        flex: 3;
+    }
+    .profile-pic {
+        flex: 1;
+    }
+}
+
+.profile-pic img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 3px solid var(--color-secondary);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+.bio-text figure {
+    float: left;
+    margin: 1rem 1.5rem 1rem 0;
+    max-width: 40%;
+    text-align: center;
+}
+
+.bio-text figure figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--color-primary);
+    margin-top: 0.5rem;
+}
+
+.bio-text figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bio-text::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.resources-card li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.resources-card li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.resources-card li a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0;
+}
+
+#lastModified {
+    opacity: 0.7;
+    font-style: italic;
+    padding-top: 0.5rem;
+}
