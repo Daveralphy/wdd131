@@ -122,6 +122,9 @@ main {
 
 .about-me-card .card-content-wrapper {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .resources-card ul {
@@ -134,7 +137,7 @@ main {
     color: var(--color-primary);
     margin: 0 0 1rem 0;
     position: relative;
-    padding-bottom: 15px; /* Added space for the pseudo-element line */
+    padding-bottom: 15px;
 }
 
 .bio-text h3::after {
@@ -145,7 +148,6 @@ main {
     left: 0;
     right: 0;
     height: 2px;
-    /* Create the fading line effect using a linear gradient */
     background: linear-gradient(
         to right,
         transparent 0%,
@@ -153,12 +155,6 @@ main {
         var(--color-primary) 80%,
         transparent 100%
     );
-}
-
-.about-me-card .card-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 @media (min-width: 600px) {
