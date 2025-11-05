@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 600px)">
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Temple Photo Album</h1>
+        <div class="album-grid">
+            <figure>
+                <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Nigeria Aba Temple" loading="lazy">
+                <figcaption>Nigeria Aba Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Ghana Kumasi Temple" loading="lazy">
+                <figcaption>Ghana Kumasi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="South Africa Johannesburg Temple" loading="lazy">
+                <figcaption>South Africa Johannesburg Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Congo Kinshasa Temple" loading="lazy">
+                <figcaption>Congo Kinshasa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.jpg" alt="Nairobi Kenya Temple" loading="lazy">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.jpg" alt="Kumasi Ghana Temple" loading="lazy">
+                <figcaption>Kumasi Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="Nigeria Lagos Temple" loading="lazy">
+                <figcaption>Nigeria Lagos Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="Nigeria Benin Temple" loading="lazy">
+                <figcaption>Nigeria Benin Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🖥️ Raphael Daveal 🖥️ WDD 131</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
