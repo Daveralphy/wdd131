@@ -72,12 +72,12 @@ h2 {
     max-width: 400px;
     position: relative;
     
-    /* Small Screen: No Tab Effect */
-    padding-top: var(--card-padding);
+    /* Mobile: No Tab Effect, reset padding-top */
+    padding-top: var(--card-padding); 
 }
 
 .data-card h2 {
-    /* Small Screen: No Tab Effect */
+    /* Mobile: Reset positioning and style */
     background-color: transparent;
     color: var(--primary-color);
     position: static;
