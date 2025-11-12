@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #303F9F;
+    --secondary-color: #ffffff;
+    --accent-color: #f0f0f0;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
+    --max-width: 1200px;
+    --card-background: rgba(255, 255, 255, 0.9);
+    --card-header-bg: var(--primary-color);
+    --card-header-color: var(--secondary-color);
+    --card-padding: 1.5rem;
+    --header-height: 2.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.hero {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-card {
+    background-color: var(--card-background);
+    border: 1px solid #ccc;
+    padding: var(--card-padding);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    
+    /* Small Screen: No Tab Effect */
+    padding-top: var(--card-padding);
+}
+
+.data-card h2 {
+    /* Small Screen: No Tab Effect */
+    background-color: transparent;
+    color: var(--primary-color);
+    position: static;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    clip-path: none;
+    line-height: 1.6;
+    border-radius: 0;
+    text-align: left;
+    z-index: auto;
+}
+
+.weather-icon-wide {
+    display: none;
+}
+.weather-card h2 .weather-icon-wide::before {
+    content: none;
+}
+.mobile-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.mobile-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9em;
+}
+
+footer p:first-child {
+    font-weight: bold;
+}

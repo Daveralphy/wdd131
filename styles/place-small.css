@@ -1,0 +1,32 @@
+/* Mobile styles */
+
+.data-card {
+    padding-top: var(--card-padding);
+}
+
+.data-card h2 {
+    /* Remove colored background and tab effect */
+    background-color: transparent;
+    color: var(--primary-color);
+    position: static;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    clip-path: none;
+    line-height: 1.6;
+    border-radius: 0;
+    text-align: left;
+    z-index: auto;
+}
+
+.mobile-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.mobile-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-card h2 .weather-icon-wide::before {
+    content: none;
+}

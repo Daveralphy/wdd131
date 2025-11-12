@@ -1,0 +1,89 @@
+/* Desktop styles (min-width: 800px) */
+
+.hero {
+    display: block;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.data-card {
+    position: absolute;
+    width: 300px;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    padding: 1rem;
+    padding-top: calc(var(--header-height) + 0.5rem);
+    overflow: visible;
+}
+
+.data-card h2 {
+    position: absolute;
+    top: 0;
+    line-height: var(--header-height);
+    z-index: 10;
+    color: var(--card-header-color);
+    background-color: var(--card-header-bg);
+    margin: 0; 
+    border-radius: 0;
+    margin-top: calc(0px - var(--card-padding) - 1px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.culture-card {
+    left: 5%;
+}
+
+.culture-card h2 {
+    left: 0;
+    right: auto;
+    width: auto;
+    margin-left: calc(0px - var(--card-padding) - 1px);
+    margin-right: 0;
+    padding: 0 1rem;
+    padding-right: 2.5rem;
+    text-align: left;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.weather-card {
+    right: 5%;
+}
+
+.weather-card h2 {
+    left: auto;
+    right: 0;
+    width: auto;
+    margin-right: calc(0px - var(--card-padding) - 1px);
+    margin-left: 0;
+    padding: 0 1.5rem;
+    padding-left: 2.5rem;
+    text-align: right;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.weather-card h2 .weather-icon-wide::before {
+    content: "☀️";
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.weather-icon-wide {
+    display: inline;
+}
+.mobile-icon {
+    display: none;
+}
+
+footer {
+    margin-top: 0;
+    position: relative;
+    z-index: 5;
+}
