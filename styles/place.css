@@ -71,13 +71,10 @@ h2 {
     width: 90%;
     max-width: 400px;
     position: relative;
-    
-    /* Mobile: No Tab Effect, reset padding-top */
-    padding-top: var(--card-padding); 
+    padding-top: var(--card-padding);
 }
 
 .data-card h2 {
-    /* Mobile: Reset positioning and style */
     background-color: transparent;
     color: var(--primary-color);
     position: static;
@@ -117,3 +114,11 @@ footer {
 footer p:first-child {
     font-weight: bold;
 }
+
+footer::after {
+    content: "";
+    display: block;
+    height: 0;
+}
+
+@media (max-width: 799px) {}
