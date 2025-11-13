@@ -90,9 +90,11 @@ h2 {
 .weather-icon-wide {
     display: none;
 }
+
 .weather-card h2 .weather-icon-wide::before {
     content: none;
 }
+
 .mobile-icon {
     text-align: center;
     margin-bottom: 1rem;
