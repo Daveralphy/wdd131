@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+
+    <meta name="description" content="Filtered and dynamic temple album">
+    <meta name="author" content="Raphael Daveal">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        <nav>
+            <a id="home">Home</a>
+            <a id="old">Old</a>
+            <a id="new">New</a>
+            <a id="large">Large</a>
+            <a id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="section-title">Home</h2>
+        <div id="temples-container" class="album-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Raphael Daveal Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
