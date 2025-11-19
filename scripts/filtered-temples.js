@@ -61,25 +61,25 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Accra Ghana",
-        location: "Accra, Ghana",
-        dedicated: "2004, January, 11",
-        area: 17500,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-1029391-wallpaper.jpg"
+        templeName: "Johannesburg South Africa",
+        location: "Johannesburg, South Africa",
+        dedicated: "1985, August, 24",
+        area: 19184,
+        imageUrl: "https://daveralphy.github.io/wdd131/images/temple7.jpg"
     },
     {
-        templeName: "Durban South Africa",
-        location: "Durban, South Africa",
-        dedicated: "2020, February, 16",
-        area: 19860,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/durban-south-africa-temple-lds-2318212-wallpaper.jpg"
+        templeName: "Kinshasa Democratic Republic of the Congo",
+        location: "Kinshasa, Democratic Republic of the Congo",
+        dedicated: "2019, April, 14",
+        area: 12000,
+        imageUrl: "https://daveralphy.github.io/wdd131/images/temple8.jpg"
     },
     {
-        templeName: "São Paulo Brazil",
-        location: "São Paulo, Brazil",
-        dedicated: "1978, October, 30",
-        area: 59246,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-1229728-wallpaper.jpg"
+        templeName: "Nairobi Kenya",
+        location: "Nairobi, Kenya",
+        dedicated: "2025, May, 18",
+        area: 19870,
+        imageUrl: "https://daveralphy.github.io/wdd131/images/temple9.jpg"
     }
 ];
 
@@ -131,6 +131,3 @@ document.querySelector('#small').addEventListener('click', () => {
 });
 
 displayTemples(temples);
-
-document.querySelector('#currentyear').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = document.lastModified;

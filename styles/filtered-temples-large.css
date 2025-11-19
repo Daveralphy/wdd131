@@ -1,5 +1,4 @@
 @media screen and (min-width: 600px) {
-
     header {
         padding: 0 1rem;
     }
@@ -14,7 +13,6 @@
         position: static;
         width: auto;
         background-color: transparent;
-        box-shadow: none;
     }
 
     nav a {
@@ -30,9 +28,5 @@
     .album-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
-    }
-
-    .card {
-        padding-bottom: 1.5rem;
     }
 }
