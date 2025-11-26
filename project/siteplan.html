@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raphael Daveal">
+    <title>Swift Insight Portfolio Site Plan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #faf4ef;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav img {
+            width: 130px;
+            height: auto;
+        }
+
+        .menu {
+            display: flex;
+            gap: 18px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            padding: 8px 14px;
+            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            transition: 0.2s ease-in-out;
+        }
+
+        .menu a:hover {
+            background: #f69e21;
+            border-color: #f69e21;
+        }
+
+        header {
+            background: #faf4ef;
+            padding: 40px 25px;
+        }
+
+        h1, h2, h3 {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 25px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .palette-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 25px 0;
+        }
+
+        .palette-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 19%;
+        }
+
+        .palette-item p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .color {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #000;
+        }
+
+        .wireframe-section {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .mobile-frame-wrapper {
+            height: 700px;
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-frame {
+            width: 360px;
+            height: 700px;
+            border: 3px solid #000;
+            border-radius: 25px;
+            background: #ffffff;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .desktop-frame-wrapper {
+            height: 700px;
+            display: flex;
+            align-items: center;
+        }
+
+        .desktop-frame {
+            width: 900px;
+            height: 600px;
+            border: 3px solid #000;
+            border-radius: 12px;
+            background: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: auto 0;
+        }
+
+        .block, .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .block {
+            background: #dcdcdc;
+            border: 1px solid #333;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .header-block {
+            background: #faf4ef;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .footer-block {
+            background: #000f6d;
+            color: white;
+        }
+
+        .logo-box {
+            width: 50px;
+            height: 30px;
+            background: #bbb;
+        }
+
+        .menu-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu-item-box {
+            width: 70px;
+            height: 25px;
+            background: #bbb;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            margin-left: auto;
+        }
+
+        .block.small { height: 60px; }
+        .block.medium { height: 100px; }
+        .block.large { height: 150px; }
+
+        .wireframe-title {
+            text-align: center;
+            margin-top: 12px;
+            font-family: Montserrat, sans-serif;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #000f6d;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+            clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        footer div {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="images/swift-logo.png" alt="Swift Insight Logo">
+    <div class="menu">
+        <a href="#site-name">Site Name</a>
+        <a href="#purpose">Purpose</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#colors">Colors</a>
+        <a href="#typography">Typography</a>
+        <a href="#wireframes">Wireframes</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Swift Insight Portfolio Site Plan</h1>
+</header>
+
+<section id="site-name">
+    <h2>Site Name</h2>
+    <p>The name for this project is Swift Insight Portfolio. I wanted something that directly reflects the work I do at Swift Insight and presents it in a clear, professional way.</p>
+</section>
+
+<section id="purpose">
+    <h2>Site Purpose</h2>
+    <p>This site explains Swift Insight’s services and showcases the responsibilities I manage in my role, including CRM setup, outreach workflows, reporting, and automation processes.</p>
+</section>
+
+<section id="scenarios">
+    <h2>Scenarios</h2>
+    <ul>
+        <li>A business owner visits the site to learn how Swift Insight improves lead generation.</li>
+        <li>A visitor wants to understand my daily tasks and workflow at Swift Insight.</li>
+    </ul>
+</section>
+
+<section id="colors">
+    <h2>Color Schema</h2>
+
+    <div class="palette-row">
+        <div class="palette-item">
+            <div class="color" style="background:#faf4ef;"></div>
+            <p>Header Background</p>
+        </div>
+        <div class="palette-item">
+            <div class="color" style="background:#f69e21;"></div>
+            <p>Call To Action</p>
+        </div>
+        <div class="palette-item">
+            <div class="color" style="background:#000f6d;"></div>
+            <p>Footer Background</p>
+        </div>
+        <div class="palette-item">
+            <div class="color" style="background:#ffffff;"></div>
+            <p>Main Background</p>
+        </div>
+        <div class="palette-item">
+            <div class="color" style="background:#000000;"></div>
+            <p>Text Color</p>
+        </div>
+    </div>
+</section>
+
+<section id="typography">
+    <h2>Typography</h2>
+    <p>I am using Montserrat for headings because of its structure and clarity, paired with Inter for body text to maintain readability and a clean look throughout the content.</p>
+</section>
+
+<section id="wireframes">
+    <h2>Wireframe Sketches</h2>
+
+    <div class="wireframe-section">
+
+        <div class="mobile-frame-wrapper">
+            <div>
+                <div class="mobile-frame">
+                    <div class="block small header-block">
+                        <div class="logo-box"></div>
+                        <div class="hamburger">☰</div>
+                    </div>
+                    <div class="block large">Hero Section</div>
+                    <div class="block medium">Swift Insight Summary</div>
+                    <div class="block medium">Services Cards</div>
+                    <div class="block medium">My Work Highlights</div>
+                    <div class="block medium">Contact Button</div>
+                    <div class="block small footer-block">Footer</div>
+                </div>
+                <p class="wireframe-title">Mobile Layout</p>
+            </div>
+        </div>
+
+        <div class="desktop-frame-wrapper">
+            <div>
+                <div class="desktop-frame">
+                    <div class="block small header-block">
+                        <div class="logo-box"></div>
+                        <div class="menu-row">
+                            <div class="menu-item-box"></div>
+                            <div class="menu-item-box"></div>
+                            <div class="menu-item-box"></div>
+                            <div class="menu-item-box"></div>
+                        </div>
+                    </div>
+                    <div class="block large">Hero Section Wide</div>
+                    <div class="block medium">Services Grid</div>
+                    <div class="block medium">My Work Preview Panels</div>
+                    <div class="block medium">Contact Form</div>
+                    <div class="block small footer-block">Footer</div>
+                </div>
+                <p class="wireframe-title">Desktop Layout</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div id="copyright"></div>
+    <div id="update-time"></div>
+</footer>
+
+<script>
+    document.getElementById("copyright").textContent =
+        "Copyright © Designed by Raphael Daveal";
+
+    const now = new Date();
+    const stamp =
+        "Last updated: " +
+        now.toLocaleDateString() +
+        " " +
+        now.toLocaleTimeString();
+
+    document.getElementById("update-time").textContent = stamp;
+</script>
+
+</body>
+</html>
