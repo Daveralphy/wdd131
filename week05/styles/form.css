@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+header, footer {
+    background: #1a237e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="date"], textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background: #d98209;
+    color: white;
+    font-size: 17px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #b96e08;
+}
+
+.rating-group {
+    border: none;
+    padding: 0;
+}
+
+.stars {
+    display: flex;
+    gap: 12px;
+    font-size: 32px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    cursor: pointer;
+}
+
+.stars input:checked + label,
+.stars input:checked ~ label {
+    color: gold;
+}
+
+.features {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.features div {
+    margin-bottom: 6px;
+}
+
+footer {
+    margin-top: 40px;
+}

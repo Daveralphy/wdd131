@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Submitted</title>
+<link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<header>
+<h1>Review Submitted</h1>
+</header>
+
+<main>
+<p>Your review has been submitted successfully.</p>
+<p>Total Reviews Submitted: <span id="counter"></span></p>
+</main>
+
+<footer>
+<p>WDD 131 • Product Review • Raphael Daveal</p>
+</footer>
+
+<script>
+let count = Number(localStorage.getItem("reviewCount")) || 0;
+count++;
+localStorage.setItem("reviewCount", count);
+document.getElementById("counter").textContent = count;
+</script>
+
+</body>
+</html>
