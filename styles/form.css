@@ -90,3 +90,13 @@ input[type="submit"]:hover {
 footer {
     margin-top: 40px;
 }
+
+@media (max-width: 480px) {
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+    .stars {
+        font-size: 28px;
+    }
+}
