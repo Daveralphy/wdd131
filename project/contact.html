@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="author" content="Raphael Daveal">
-  <meta name="description" content="Contact form for reaching out to Raphael Daveal about his SDR work at Swift Insight.">
-
+  <meta name="description" content="Contact form for Swift Insight SDR portfolio.">
   <title>Swift Insight SDR Portfolio - Contact</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +20,10 @@
   <div class="nav-left">
     <img src="images/swift-logo.png" class="logo" alt="Swift Insight logo">
   </div>
-  <ul class="nav-right">
+
+  <button class="menu-btn" id="menu-btn">☰</button>
+
+  <ul class="nav-right" id="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="role.html">My Role</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
@@ -32,50 +33,44 @@
 <header class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <h1>Let’s Connect</h1>
-      <p>If you want to discuss my SDR work at Swift Insight or my outreach and engagement process, send a message using the form below.</p>
+      <h1>Contact Me</h1>
+      <p>If you want to learn more about my SDR work or have an opportunity, reach out through this form.</p>
       <div class="hero-buttons">
         <a href="role.html" class="btn primary">My Role</a>
         <a href="index.html" class="btn outline">Back Home</a>
       </div>
     </div>
     <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="Analytics workspace">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1000&q=65" alt="Analytics workspace">
     </div>
   </div>
 </header>
 
 <main class="section">
-  <div class="section-inner centered">
+  <div class="section-inner">
     <h2>Send a Message</h2>
 
-    <form id="contactForm" class="form" novalidate>
-      <label for="name">Name</label>
-      <input id="name" required>
+    <form class="form" id="contact-form">
+      <label>Name</label>
+      <input type="text" id="name">
 
-      <label for="email">Email</label>
-      <input id="email" type="email" required>
+      <label>Email</label>
+      <input type="email" id="email">
 
-      <label for="message">Message</label>
+      <label>Message</label>
       <textarea id="message"></textarea>
 
-      <div class="hero-buttons center-buttons">
-        <button type="submit" class="btn primary">Submit</button>
-        <button type="button" id="clearSaved" class="btn outline">Clear Saved</button>
-      </div>
-
-      <p id="form-output"></p>
+      <button class="btn primary" type="submit">Send</button>
     </form>
 
-    <details class="saved-block">
-      <summary>Saved submissions</summary>
-      <div id="saved-list"></div>
-    </details>
+    <div class="saved-block">
+      <p id="saved-output"></p>
+    </div>
   </div>
 </main>
 
 <footer class="footer">
-  <p id="footer-copy-3"></p>
+  <p id="footer-copy"></p>
 </footer>
 
 </body>

@@ -33,10 +33,16 @@ p {
 .nav-left {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .logo {
   height: 44px;
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
 }
 
 .nav-right {
@@ -93,14 +99,10 @@ p {
   font-size: 16px;
 }
 
-.hero-right {
-  flex: 1 1 320px;
+.hero-buttons {
+  margin-top: 16px;
   display: flex;
-  justify-content: center;
-}
-
-.hero-right img {
-  border-radius: 8px;
+  gap: 10px;
 }
 
 .btn {
@@ -124,10 +126,14 @@ p {
   border: 1px solid #f69e21;
 }
 
-.hero-buttons {
-  margin-top: 16px;
+.hero-right {
+  flex: 1 1 320px;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+}
+
+.hero-right img {
+  border-radius: 8px;
 }
 
 .section {
@@ -209,19 +215,52 @@ p {
 }
 
 @media (max-width: 899px) {
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 26px;
+    margin-left: 14px;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin-top: 12px;
+    background: #faf4ef;
+    border-top: 1px solid #e2dcd6;
+    padding: 12px 0;
+  }
+
+  .nav-right li {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
   .hero-inner {
     flex-direction: column-reverse;
     text-align: left;
   }
+
   .hero-left,
   .hero-right {
     flex: 1 1 auto;
   }
+
   .hero-buttons {
     justify-content: flex-start;
   }
-  .nav-right {
-    gap: 8px;
+
+  .nav-right a {
+    display: block;
+    width: 100%;
   }
 }
 
