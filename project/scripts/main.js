@@ -9,7 +9,7 @@ if (menuBtn && navLinks) {
 
 const footerCopy = document.getElementById("footer-copy");
 if (footerCopy) {
-  footerCopy.textContent = "© " + new Date().getFullYear() + "Designed by Raphael Daveal - Swift Insight SDR Portfolio";
+  footerCopy.textContent = "© " + new Date().getFullYear() + " Designed by Raphael Daveal - Swift Insight SDR Portfolio";
 }
 
 const form = document.getElementById("contact-form");
