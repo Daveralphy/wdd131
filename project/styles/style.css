@@ -30,19 +30,8 @@ p {
   align-items: center;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logo {
   height: 44px;
-}
-
-.menu-btn {
-  display: none;
-  cursor: pointer;
 }
 
 .nav-right {
@@ -72,6 +61,10 @@ p {
   color: #ffffff;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .hero {
   background: #faf4ef;
   padding: 50px 20px;
@@ -99,10 +92,14 @@ p {
   font-size: 16px;
 }
 
-.hero-buttons {
-  margin-top: 16px;
+.hero-right {
+  flex: 1 1 320px;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+}
+
+.hero-right img {
+  border-radius: 8px;
 }
 
 .btn {
@@ -126,18 +123,14 @@ p {
   border: 1px solid #f69e21;
 }
 
-.hero-right {
-  flex: 1 1 320px;
+.hero-buttons {
+  margin-top: 16px;
   display: flex;
-  justify-content: center;
-}
-
-.hero-right img {
-  border-radius: 8px;
+  gap: 10px;
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .section-inner {
@@ -145,21 +138,15 @@ p {
   margin: 0 auto;
 }
 
-.section-inner h2 {
+.centered {
   text-align: center;
-}
-
-.section-inner > p {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 24px;
 }
 
 .grid-3 {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .card {
@@ -200,7 +187,7 @@ p {
 
 .saved-block {
   margin-top: 24px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer {
@@ -210,65 +197,42 @@ p {
   padding: 24px 20px;
 }
 
-.section + .section {
-  padding-top: 10px;
-}
-
 @media (max-width: 899px) {
   .menu-btn {
     display: block;
     background: none;
     border: none;
     font-size: 26px;
-    margin-left: 14px;
+    margin-left: auto;
+    cursor: pointer;
   }
-
   .nav-right {
     display: none;
     flex-direction: column;
     gap: 0;
-    width: 100%;
-    margin-top: 12px;
+    margin-top: 14px;
     background: #faf4ef;
     border-top: 1px solid #e2dcd6;
     padding: 12px 0;
   }
-
+  .nav-right.show {
+    display: flex;
+  }
   .nav-right li {
     width: 100%;
     text-align: center;
     padding: 6px 0;
   }
-
-  .nav-right.show {
-    display: flex;
-  }
-
   .hero-inner {
     flex-direction: column-reverse;
-    text-align: left;
   }
-
-  .hero-left,
-  .hero-right {
-    flex: 1 1 auto;
-  }
-
   .hero-buttons {
     justify-content: flex-start;
-  }
-
-  .nav-right a {
-    display: block;
-    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .hero-left h1 {
     font-size: 24px;
-  }
-  .site-nav {
-    padding: 10px 16px;
   }
 }

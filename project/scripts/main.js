@@ -1,9 +1,11 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+}
 
 const footerCopy = document.getElementById("footer-copy");
 if (footerCopy) {
