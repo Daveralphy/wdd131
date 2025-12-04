@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="author" content="Raphael Daveal">
-  <meta name="description" content="Contact form for Raphael Daveal, Swift Insight SDR.">
+  <meta name="description" content="Contact form for reaching out to Raphael Daveal about his SDR work at Swift Insight.">
 
   <title>Swift Insight SDR Portfolio - Contact</title>
 
@@ -16,50 +16,66 @@
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/main.js" defer></script>
 </head>
-
 <body>
 
 <nav class="site-nav">
   <div class="nav-left">
-    <img src="images/swift-logo.png" class="logo" alt="Swift Insight Logo">
-    <span class="brand">Raphael Daveal</span>
+    <img src="images/swift-logo.png" class="logo" alt="Swift Insight logo">
   </div>
   <ul class="nav-right">
     <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Role</a></li>
-    <li><a href="mywork.html">My Work</a></li>
+    <li><a href="role.html">My Role</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
 </nav>
 
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>Let’s Connect</h1>
+      <p>If you want to discuss my SDR work at Swift Insight or my outreach and engagement process, send a message using the form below.</p>
+      <div class="hero-buttons">
+        <a href="role.html" class="btn primary">My Role</a>
+        <a href="index.html" class="btn outline">Back Home</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="Analytics workspace">
+    </div>
+  </div>
+</header>
+
 <main class="section">
-  <h1>Contact Me</h1>
-  <p>Send a message. Submissions are saved locally for testing.</p>
+  <div class="section-inner centered">
+    <h2>Send a Message</h2>
 
-  <form id="contactForm" class="form" novalidate>
-    <label>Name</label>
-    <input id="name" required>
+    <form id="contactForm" class="form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" required>
 
-    <label>Email</label>
-    <input id="email" type="email" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
 
-    <label>Message</label>
-    <textarea id="message"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
 
-    <button type="submit" class="btn primary">Submit</button>
-    <button type="button" id="clearSaved" class="btn outline">Clear Saved</button>
+      <div class="hero-buttons center-buttons">
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="button" id="clearSaved" class="btn outline">Clear Saved</button>
+      </div>
 
-    <p id="form-output"></p>
-  </form>
+      <p id="form-output"></p>
+    </form>
 
-  <details style="margin-top:20px">
-    <summary>Saved submissions</summary>
-    <div id="saved-list" style="margin-top:12px"></div>
-  </details>
+    <details class="saved-block">
+      <summary>Saved submissions</summary>
+      <div id="saved-list"></div>
+    </details>
+  </div>
 </main>
 
 <footer class="footer">
-  <p id="footer-copy-4"></p>
+  <p id="footer-copy-3"></p>
 </footer>
 
 </body>
